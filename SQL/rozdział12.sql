@@ -78,11 +78,3 @@ where klienci.kl_id = zamowienia.kl_id
 and zamowienia.zam_numer = elementyzamowienia.zam_numer
 group by kl_nazwa having sum(ilosc * cena_elem) >= 1000    
 order by kl_nazwa;
-
-
-
-
-
-
-
-
